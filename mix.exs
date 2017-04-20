@@ -31,16 +31,10 @@ defmodule Cashier.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:poison, "~> 3.0"},
-      {:httpoison, "~> 0.11.0"},
       {:gen_stage, "~> 0.11.0"},
 
       # dev deps
       {:ex_doc, ">= 0.14.0", only: :dev},
-
-      # test deps
-      # using bypass master as this hasn't had a release in a while
-      {:bypass, git: "https://github.com/PSPDFKit-labs/bypass.git", only: :test}
     ]
   end
 
