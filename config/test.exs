@@ -1,10 +1,7 @@
 use Mix.Config
 
-config :cashier, :cashier,
+config :cashier,
   defaults: [
-    gateway: :dummy,
-    currency: "USD",
-    max_gateway_workers: 10
+    gateway: :test,
+    currency: "USD"
   ]
-  
-config :cashier, :dummy, []
