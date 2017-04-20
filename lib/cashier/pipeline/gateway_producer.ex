@@ -8,5 +8,5 @@ defmodule Cashier.Pipeline.GatewayProducer do
   def init(_opts), do: {:producer, []}
   
   def handle_demand(demand, state),
-    do: {:noreply, [demand], state)
+    do: {:noreply, [demand], state}
 end
